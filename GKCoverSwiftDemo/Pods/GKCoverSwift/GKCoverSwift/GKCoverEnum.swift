@@ -9,8 +9,8 @@
 import UIKit
 
 /// 屏幕宽高
-let kScreenW = UIScreen.main.bounds.size.width
-let kScreenH = UIScreen.main.bounds.size.height
+public let kScreenW = UIScreen.main.bounds.size.width
+public let kScreenH = UIScreen.main.bounds.size.height
 
 /// 默认动画时间
 let kAnimDuration = 0.25

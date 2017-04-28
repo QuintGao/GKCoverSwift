@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GKCover: UIView, CAAnimationDelegate {
+public class GKCover: UIView, CAAnimationDelegate {
 
     var coverShow     : Bool = false
     var animated      : Bool = false
@@ -75,7 +75,7 @@ class GKCover: UIView, CAAnimationDelegate {
     }
     
     // delegate
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         showBlock!()
     }
     
@@ -251,7 +251,7 @@ class GKCover: UIView, CAAnimationDelegate {
 
 extension GKCover {
     
-    convenience init(fromView: UIView, contentView: UIView, style: GKCoverStyle, showStyle: GKCoverShowStyle, showAnimStyle: GKCoverShowAnimStyle, hideAnimStyle: GKCoverHideAnimStyle, notClick: Bool, showBlock: @escaping (() -> ()), hideBlock: @escaping (() -> ())) {
+   public convenience init(fromView: UIView, contentView: UIView, style: GKCoverStyle, showStyle: GKCoverShowStyle, showAnimStyle: GKCoverShowAnimStyle, hideAnimStyle: GKCoverHideAnimStyle, notClick: Bool, showBlock: @escaping (() -> ()), hideBlock: @escaping (() -> ())) {
         
         self.init(frame: fromView.bounds)
         
