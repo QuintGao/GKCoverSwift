@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		123B19B5803709A71B3624D17DBB9EF3 /* GKCoverSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D4AAC12932F631EFFDF42D63E4179F /* GKCoverSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D2380D4D153CB06AF1129F78BD29862 /* Pods-GKCoverSwiftDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF8F0612AECD0056B303E773F360A2 /* Pods-GKCoverSwiftDemo-dummy.m */; };
+		553DEBFF6C3AEDAFCAA869FC4E194DE7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA272F83B120B5C5C7AB5761A9587B9 /* UIView+Extension.swift */; };
+		6E0EE850C6D7FE8BC3261A3622340770 /* GKCoverSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF3618E82885D6257FC508E773C81F6 /* GKCoverSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8175404B1B171E82AFF4655F4408184E /* Pods-GKCoverSwiftDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBBE565E2DF3DFDA36B6A5B450C68DB /* Pods-GKCoverSwiftDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86F9AFE9F5345605E25530845933ABCF /* GKCoverSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55931AD4562E6223298B17287C5AAD46 /* GKCoverSwift-dummy.m */; };
+		999CE5ACC3071DA3B548A23AC9D5FF04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9C8301AE73B7338932F1DCCD30B8AF2A /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = 46448A64E562A2041DFA8C242E926B2E /* Resource */; };
+		D403418CA4F61E7B2AC8F971590E9C3D /* GKCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF05F689ED78C5D08C814DD4572981 /* GKCover.swift */; };
+		EAA86ABAFCAD197C296BD396AB0CF13E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EE5264D825CBFEBC176B3F6902C88B3C /* GKCoverEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31A9AD405AA36EBED7A87769660C06 /* GKCoverEnum.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8830B6EBE650B225B3FD106CCFF34471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0717AE901EA45563A083EFB1DC6D3A;
+			remoteInfo = GKCoverSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15A7D7A981B0F76C0193D7FD0B5F47F4 /* Pods-GKCoverSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKCoverSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2AED699A8AB2B2046039C215E96E792E /* Pods-GKCoverSwiftDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKCoverSwiftDemo-resources.sh"; sourceTree = "<group>"; };
+		2C85B1FC19439B6F09C40845BE7061C6 /* GKCoverSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKCoverSwift-prefix.pch"; sourceTree = "<group>"; };
+		3F0E93E875A0D58E3D42DF481A035D84 /* GKCoverSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKCoverSwift.xcconfig; sourceTree = "<group>"; };
+		401D844ED4751ED156DEC18ADB9D9FD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423C1018BC8D3E5328BCD0FFBDFC74E2 /* Pods-GKCoverSwiftDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GKCoverSwiftDemo.modulemap"; sourceTree = "<group>"; };
+		46448A64E562A2041DFA8C242E926B2E /* Resource */ = {isa = PBXFileReference; includeInIndex = 1; name = Resource; path = GKCoverSwift/Resource; sourceTree = "<group>"; };
+		4DF3618E82885D6257FC508E773C81F6 /* GKCoverSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKCoverSwift-umbrella.h"; sourceTree = "<group>"; };
+		5064F6BB317D372F7EB9A0A1EB6B066F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55931AD4562E6223298B17287C5AAD46 /* GKCoverSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKCoverSwift-dummy.m"; sourceTree = "<group>"; };
+		5F1849959E1DC7029DD56D35270D1966 /* Pods-GKCoverSwiftDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKCoverSwiftDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6FBF8F0612AECD0056B303E773F360A2 /* Pods-GKCoverSwiftDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKCoverSwiftDemo-dummy.m"; sourceTree = "<group>"; };
+		7BA272F83B120B5C5C7AB5761A9587B9 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "GKCoverSwift/Extension/UIView+Extension.swift"; sourceTree = "<group>"; };
+		7FBB5E36A4BBB2426C511D1155BD7003 /* Pods_GKCoverSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GKCoverSwiftDemo.framework; path = "Pods-GKCoverSwiftDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FF05F689ED78C5D08C814DD4572981 /* GKCover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKCover.swift; path = GKCoverSwift/GKCover.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A672EAD40536C66868805B0F6F2D1F1B /* Pods-GKCoverSwiftDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKCoverSwiftDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AAAE9E023F796E9DF6FB6DEDA390FE49 /* GKCoverSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKCoverSwift.framework; path = GKCoverSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A2B37D5328D36FEA0DD1CA2503172D /* Pods-GKCoverSwiftDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKCoverSwiftDemo-frameworks.sh"; sourceTree = "<group>"; };
+		D62B34A9ED2DDB28F8ECB3977B5D1C12 /* Pods-GKCoverSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKCoverSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DD31A9AD405AA36EBED7A87769660C06 /* GKCoverEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKCoverEnum.swift; path = GKCoverSwift/GKCoverEnum.swift; sourceTree = "<group>"; };
+		F0D4AAC12932F631EFFDF42D63E4179F /* GKCoverSwift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKCoverSwift.h; path = GKCoverSwift/GKCoverSwift.h; sourceTree = "<group>"; };
+		F48CBBEAFE77E79FC9774F68BF6A7D6B /* GKCoverSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GKCoverSwift.modulemap; sourceTree = "<group>"; };
+		FFBBE565E2DF3DFDA36B6A5B450C68DB /* Pods-GKCoverSwiftDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKCoverSwiftDemo-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1943006752D6DB3C73055DD49B0DAE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999CE5ACC3071DA3B548A23AC9D5FF04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BF6B39834B6BAA855D681263E740408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA86ABAFCAD197C296BD396AB0CF13E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19057108E6B84682D5184F8B510804B0 /* Pods-GKCoverSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				401D844ED4751ED156DEC18ADB9D9FD2 /* Info.plist */,
+				423C1018BC8D3E5328BCD0FFBDFC74E2 /* Pods-GKCoverSwiftDemo.modulemap */,
+				A672EAD40536C66868805B0F6F2D1F1B /* Pods-GKCoverSwiftDemo-acknowledgements.markdown */,
+				5F1849959E1DC7029DD56D35270D1966 /* Pods-GKCoverSwiftDemo-acknowledgements.plist */,
+				6FBF8F0612AECD0056B303E773F360A2 /* Pods-GKCoverSwiftDemo-dummy.m */,
+				C3A2B37D5328D36FEA0DD1CA2503172D /* Pods-GKCoverSwiftDemo-frameworks.sh */,
+				2AED699A8AB2B2046039C215E96E792E /* Pods-GKCoverSwiftDemo-resources.sh */,
+				FFBBE565E2DF3DFDA36B6A5B450C68DB /* Pods-GKCoverSwiftDemo-umbrella.h */,
+				15A7D7A981B0F76C0193D7FD0B5F47F4 /* Pods-GKCoverSwiftDemo.debug.xcconfig */,
+				D62B34A9ED2DDB28F8ECB3977B5D1C12 /* Pods-GKCoverSwiftDemo.release.xcconfig */,
+			);
+			name = "Pods-GKCoverSwiftDemo";
+			path = "Target Support Files/Pods-GKCoverSwiftDemo";
+			sourceTree = "<group>";
+		};
+		487A1CD91C3CBABCEA31A1DB456D3380 /* GKCoverSwift */ = {
+			isa = PBXGroup;
+			children = (
+				90FF05F689ED78C5D08C814DD4572981 /* GKCover.swift */,
+				DD31A9AD405AA36EBED7A87769660C06 /* GKCoverEnum.swift */,
+				F0D4AAC12932F631EFFDF42D63E4179F /* GKCoverSwift.h */,
+				7BA272F83B120B5C5C7AB5761A9587B9 /* UIView+Extension.swift */,
+				A37102D1AA7247D6751A3418CEFA4F8D /* Resources */,
+				76B370BF6376C159200CCE96A2E0533C /* Support Files */,
+			);
+			name = GKCoverSwift;
+			path = GKCoverSwift;
+			sourceTree = "<group>";
+		};
+		58BA9A726FC85BFA241A062AEBBE30C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				487A1CD91C3CBABCEA31A1DB456D3380 /* GKCoverSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76B370BF6376C159200CCE96A2E0533C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F48CBBEAFE77E79FC9774F68BF6A7D6B /* GKCoverSwift.modulemap */,
+				3F0E93E875A0D58E3D42DF481A035D84 /* GKCoverSwift.xcconfig */,
+				55931AD4562E6223298B17287C5AAD46 /* GKCoverSwift-dummy.m */,
+				2C85B1FC19439B6F09C40845BE7061C6 /* GKCoverSwift-prefix.pch */,
+				4DF3618E82885D6257FC508E773C81F6 /* GKCoverSwift-umbrella.h */,
+				5064F6BB317D372F7EB9A0A1EB6B066F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GKCoverSwift";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				58BA9A726FC85BFA241A062AEBBE30C6 /* Pods */,
+				BC0B6E83A645051B3D366A02D971C8F3 /* Products */,
+				C1001B39AFAF28524828665271A377BC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A37102D1AA7247D6751A3418CEFA4F8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46448A64E562A2041DFA8C242E926B2E /* Resource */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC0B6E83A645051B3D366A02D971C8F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE9E023F796E9DF6FB6DEDA390FE49 /* GKCoverSwift.framework */,
+				7FBB5E36A4BBB2426C511D1155BD7003 /* Pods_GKCoverSwiftDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1001B39AFAF28524828665271A377BC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19057108E6B84682D5184F8B510804B0 /* Pods-GKCoverSwiftDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F6C53A164C1B0910EEC103D50B9664E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0EE850C6D7FE8BC3261A3622340770 /* GKCoverSwift-umbrella.h in Headers */,
+				123B19B5803709A71B3624D17DBB9EF3 /* GKCoverSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B671403E14B6133B738C4038229C623 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8175404B1B171E82AFF4655F4408184E /* Pods-GKCoverSwiftDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7D71F8C3D368DD536C04AA46FC585C86 /* Pods-GKCoverSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B86C8195B14BAD79C999FBF5DBE5BCED /* Build configuration list for PBXNativeTarget "Pods-GKCoverSwiftDemo" */;
+			buildPhases = (
+				B493CE35BF748CFD613541846749BA11 /* Sources */,
+				4BF6B39834B6BAA855D681263E740408 /* Frameworks */,
+				8B671403E14B6133B738C4038229C623 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A117B720B1D1B62C387EDF48910DEF00 /* PBXTargetDependency */,
+			);
+			name = "Pods-GKCoverSwiftDemo";
+			productName = "Pods-GKCoverSwiftDemo";
+			productReference = 7FBB5E36A4BBB2426C511D1155BD7003 /* Pods_GKCoverSwiftDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF0717AE901EA45563A083EFB1DC6D3A /* GKCoverSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9E1448E637F95F1E0D5E0E8335EE3D /* Build configuration list for PBXNativeTarget "GKCoverSwift" */;
+			buildPhases = (
+				6DC3966F8AB594F431A32B1E9E312690 /* Sources */,
+				1943006752D6DB3C73055DD49B0DAE48 /* Frameworks */,
+				6F6C53A164C1B0910EEC103D50B9664E /* Headers */,
+				10281BFB9919F0F182178B156DAD4A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKCoverSwift;
+			productName = GKCoverSwift;
+			productReference = AAAE9E023F796E9DF6FB6DEDA390FE49 /* GKCoverSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BC0B6E83A645051B3D366A02D971C8F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF0717AE901EA45563A083EFB1DC6D3A /* GKCoverSwift */,
+				7D71F8C3D368DD536C04AA46FC585C86 /* Pods-GKCoverSwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10281BFB9919F0F182178B156DAD4A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8301AE73B7338932F1DCCD30B8AF2A /* Resource in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DC3966F8AB594F431A32B1E9E312690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D403418CA4F61E7B2AC8F971590E9C3D /* GKCover.swift in Sources */,
+				EE5264D825CBFEBC176B3F6902C88B3C /* GKCoverEnum.swift in Sources */,
+				86F9AFE9F5345605E25530845933ABCF /* GKCoverSwift-dummy.m in Sources */,
+				553DEBFF6C3AEDAFCAA869FC4E194DE7 /* UIView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B493CE35BF748CFD613541846749BA11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2380D4D153CB06AF1129F78BD29862 /* Pods-GKCoverSwiftDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A117B720B1D1B62C387EDF48910DEF00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GKCoverSwift;
+			target = EF0717AE901EA45563A083EFB1DC6D3A /* GKCoverSwift */;
+			targetProxy = 8830B6EBE650B225B3FD106CCFF34471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27FE09C1C000095D7127EC5D8F8B6E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A7D7A981B0F76C0193D7FD0B5F47F4 /* Pods-GKCoverSwiftDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GKCoverSwiftDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GKCoverSwiftDemo/Pods-GKCoverSwiftDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GKCoverSwiftDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		405AA0B6E226A56ED435C621ED74DC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0E93E875A0D58E3D42DF481A035D84 /* GKCoverSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GKCoverSwift/GKCoverSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GKCoverSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GKCoverSwift/GKCoverSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GKCoverSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		462E75946D3724A5F000E2C385E81D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0E93E875A0D58E3D42DF481A035D84 /* GKCoverSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GKCoverSwift/GKCoverSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GKCoverSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GKCoverSwift/GKCoverSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GKCoverSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CBC8BB5CCCB7D00676A77387E4812DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D62B34A9ED2DDB28F8ECB3977B5D1C12 /* Pods-GKCoverSwiftDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GKCoverSwiftDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GKCoverSwiftDemo/Pods-GKCoverSwiftDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GKCoverSwiftDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F9E1448E637F95F1E0D5E0E8335EE3D /* Build configuration list for PBXNativeTarget "GKCoverSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405AA0B6E226A56ED435C621ED74DC47 /* Debug */,
+				462E75946D3724A5F000E2C385E81D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B86C8195B14BAD79C999FBF5DBE5BCED /* Build configuration list for PBXNativeTarget "Pods-GKCoverSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FE09C1C000095D7127EC5D8F8B6E23 /* Debug */,
+				CBC8BB5CCCB7D00676A77387E4812DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

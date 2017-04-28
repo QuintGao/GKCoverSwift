@@ -6,14 +6,12 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.authors      = { "高坤" => "1094887059@qq.com" }
   s.social_media_url   = "https://github.com/QuintGao"
-  s.platform     = :ios, "6.0"
-  s.ios.deployment_target = '6.0'
+  s.platform     = :ios, "8.0"
+  s.ios.deployment_target = '8.0'
   s.source       = { :git => "https://github.com/QuintGao/GKCoverSwift.git", :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'GKCoverSwift/**/*.{swift}'
-  s.public_header_files = 'GKCoverSwift/**/*.{swift}'
+  s.source_files = 'GKCoverSwift/**/*'
   s.resource     = 'GKCoverSwift/Resource'
-  s.frameworks   = "Foundation", "UIKit"
 
 end

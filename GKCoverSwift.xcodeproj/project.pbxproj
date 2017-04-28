@@ -193,6 +193,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 79B10CF11EB31F530017ADB4;
 			productRefGroup = 79B10CFC1EB31F540017ADB4 /* Products */;
@@ -440,6 +441,7 @@
 				79B10D111EB31F540017ADB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79B10D121EB31F540017ADB4 /* Build configuration list for PBXNativeTarget "GKCoverSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +450,7 @@
 				79B10D141EB31F540017ADB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module GKCoverSwift {
+  umbrella header "GKCoverSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
