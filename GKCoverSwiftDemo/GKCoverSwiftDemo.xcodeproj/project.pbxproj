@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		20E769F5E057E5E05A8A949E /* Pods_GKCoverSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E59CC72D20BC2CF576B147 /* Pods_GKCoverSwiftDemo.framework */; };
-		79B10D5E1EB345E90017ADB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B10D5D1EB345E90017ADB4 /* AppDelegate.swift */; };
-		79B10D601EB345E90017ADB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B10D5F1EB345E90017ADB4 /* ViewController.swift */; };
 		79B10D631EB345E90017ADB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B10D611EB345E90017ADB4 /* Main.storyboard */; };
 		79B10D651EB345E90017ADB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B10D641EB345E90017ADB4 /* Assets.xcassets */; };
 		79B10D681EB345E90017ADB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B10D661EB345E90017ADB4 /* LaunchScreen.storyboard */; };
 		79B10D731EB345E90017ADB4 /* GKCoverSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B10D721EB345E90017ADB4 /* GKCoverSwiftDemoTests.swift */; };
 		79B10D7E1EB345E90017ADB4 /* GKCoverSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B10D7D1EB345E90017ADB4 /* GKCoverSwiftDemoUITests.swift */; };
+		79B10D8F1EB835850017ADB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B10D8D1EB835850017ADB4 /* AppDelegate.swift */; };
+		79B10D921EB835E90017ADB4 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B10D911EB835E90017ADB4 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		162F2713D1041CDF6A718104 /* Pods-GKCoverSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKCoverSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKCoverSwiftDemo/Pods-GKCoverSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6D9811CB2E95002FEAB16762 /* Pods-GKCoverSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKCoverSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKCoverSwiftDemo/Pods-GKCoverSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		79B10D5A1EB345E90017ADB4 /* GKCoverSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKCoverSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B10D5D1EB345E90017ADB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79B10D5F1EB345E90017ADB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79B10D621EB345E90017ADB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79B10D641EB345E90017ADB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B10D671EB345E90017ADB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +48,8 @@
 		79B10D791EB345E90017ADB4 /* GKCoverSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKCoverSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B10D7D1EB345E90017ADB4 /* GKCoverSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKCoverSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		79B10D7F1EB345E90017ADB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B10D8D1EB835850017ADB4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79B10D911EB835E90017ADB4 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		B4E59CC72D20BC2CF576B147 /* Pods_GKCoverSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKCoverSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,8 +112,7 @@
 		79B10D5C1EB345E90017ADB4 /* GKCoverSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				79B10D5D1EB345E90017ADB4 /* AppDelegate.swift */,
-				79B10D5F1EB345E90017ADB4 /* ViewController.swift */,
+				79B10D8B1EB835390017ADB4 /* Classes */,
 				79B10D611EB345E90017ADB4 /* Main.storyboard */,
 				79B10D641EB345E90017ADB4 /* Assets.xcassets */,
 				79B10D661EB345E90017ADB4 /* LaunchScreen.storyboard */,
@@ -138,6 +137,15 @@
 				79B10D7F1EB345E90017ADB4 /* Info.plist */,
 			);
 			path = GKCoverSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		79B10D8B1EB835390017ADB4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79B10D8D1EB835850017ADB4 /* AppDelegate.swift */,
+				79B10D911EB835E90017ADB4 /* DemoViewController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		90FECB3599712CBBB71BC05F /* Pods */ = {
@@ -221,6 +229,7 @@
 					79B10D591EB345E90017ADB4 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9J2ZLU6Z7U;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					79B10D6D1EB345E90017ADB4 = {
@@ -337,8 +346,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B10D601EB345E90017ADB4 /* ViewController.swift in Sources */,
-				79B10D5E1EB345E90017ADB4 /* AppDelegate.swift in Sources */,
+				79B10D8F1EB835850017ADB4 /* AppDelegate.swift in Sources */,
+				79B10D921EB835E90017ADB4 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,11 +500,14 @@
 			baseConfigurationReference = 162F2713D1041CDF6A718104 /* Pods-GKCoverSwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9J2ZLU6Z7U;
 				INFOPLIST_FILE = GKCoverSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bykj.gk.GKCoverSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -505,11 +517,13 @@
 			baseConfigurationReference = 6D9811CB2E95002FEAB16762 /* Pods-GKCoverSwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9J2ZLU6Z7U;
 				INFOPLIST_FILE = GKCoverSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bykj.gk.GKCoverSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -591,6 +605,7 @@
 				79B10D841EB345E90017ADB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79B10D851EB345E90017ADB4 /* Build configuration list for PBXNativeTarget "GKCoverSwiftDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +614,7 @@
 				79B10D871EB345E90017ADB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79B10D881EB345E90017ADB4 /* Build configuration list for PBXNativeTarget "GKCoverSwiftDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +623,7 @@
 				79B10D8A1EB345E90017ADB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

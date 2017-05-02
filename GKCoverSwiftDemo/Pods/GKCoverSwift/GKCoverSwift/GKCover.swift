@@ -20,8 +20,8 @@ public class GKCover: UIView, CAAnimationDelegate {
     var showStyle     : GKCoverShowStyle!
     var showAnimStyle : GKCoverShowAnimStyle!
     var hideAnimStyle : GKCoverHideAnimStyle!
-    var showBlock     : (() -> ())!
-    var hideBlock     : (() -> ())!
+    var showBlock     : (() -> Swift.Void)? = nil
+    var hideBlock     : (() -> Swift.Void)? = nil
     
     
     // MARK: - Public Method
@@ -145,7 +145,7 @@ public class GKCover: UIView, CAAnimationDelegate {
                     self.showBlock!()
                 })
             }else {
-                showBlock()
+                showBlock!()
                 contentView.gk_y = 0
             }
             break
@@ -155,7 +155,7 @@ public class GKCover: UIView, CAAnimationDelegate {
                 UIView.animate(withDuration: kAnimDuration, animations: { 
                     self.contentView.center = self.fromView.center
                 }, completion: { (finished) in
-                    self.showBlock()
+                    self.showBlock!()
                 })
             }else if showAnimStyle == .Center {
                 contentView!.center = fromView.center
@@ -165,11 +165,11 @@ public class GKCover: UIView, CAAnimationDelegate {
                 UIView.animate(withDuration: kAnimDuration, animations: { 
                     self.contentView.center = self.fromView.center
                 }, completion: { (finished) in
-                    self.showBlock()
+                    self.showBlock!()
                 })
             }else {
                 contentView.center = fromView.center
-                showBlock()
+                showBlock!()
             }
             break
         case .Bottom:
@@ -178,10 +178,10 @@ public class GKCover: UIView, CAAnimationDelegate {
                 UIView.animate(withDuration: kAnimDuration, animations: { 
                     self.contentView.gk_y = kScreenH - self.contentView.gk_height
                 }, completion: { (finished) in
-                    self.showBlock()
+                    self.showBlock!()
                 })
             }else {
-                showBlock()
+                showBlock!()
                 contentView.gk_y = kScreenH - contentView.gk_height
             }
             break

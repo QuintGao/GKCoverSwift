@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Demo View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DemoViewController" customModule="GKCoverSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GKCoverSwiftDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBp-Zz-JRv">
+                                <rect key="frame" x="111.5" y="50" width="151.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POx-eX-hSM">
+                                <rect key="frame" x="126" y="91" width="123" height="30"/>
+                                <state key="normal" title="顶部弹出顶部隐藏"/>
+                                <connections>
+                                    <action selector="top01:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fs6-qO-nuh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-BS-R10">
+                                <rect key="frame" x="133.5" y="141" width="108" height="30"/>
+                                <state key="normal" title="顶部弹出无动画"/>
+                                <connections>
+                                    <action selector="top02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9FB-fw-1Fw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d40-aF-ETV">
+                                <rect key="frame" x="148.5" y="191" width="78" height="30"/>
+                                <state key="normal" title="中间弹出01"/>
+                                <connections>
+                                    <action selector="center01:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgk-uz-G4u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZH-Lf-asF">
+                                <rect key="frame" x="147.5" y="241" width="80" height="30"/>
+                                <state key="normal" title="中间弹出02"/>
+                                <connections>
+                                    <action selector="center02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MnD-bO-Kz0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mt-bg-XDs">
+                                <rect key="frame" x="147.5" y="291" width="80" height="30"/>
+                                <state key="normal" title="中间弹出03"/>
+                                <connections>
+                                    <action selector="center03:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vhO-gh-RZ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vy7-qv-fYg">
+                                <rect key="frame" x="147.5" y="341" width="80" height="30"/>
+                                <state key="normal" title="中间弹出04"/>
+                                <connections>
+                                    <action selector="center04:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UqA-EC-Jwc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT6-PI-Cfq">
+                                <rect key="frame" x="126" y="391" width="123" height="30"/>
+                                <state key="normal" title="底部弹出底部隐藏"/>
+                                <connections>
+                                    <action selector="buttom01:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qf1-3q-aTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-cM-ORX">
+                                <rect key="frame" x="133.5" y="441" width="108" height="30"/>
+                                <state key="normal" title="底部弹出无动画"/>
+                                <connections>
+                                    <action selector="bottom02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="644-lH-NyP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="POx-eX-hSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0mS-TT-yEZ"/>
+                            <constraint firstItem="hT6-PI-Cfq" firstAttribute="top" secondItem="vy7-qv-fYg" secondAttribute="bottom" constant="20" id="2n0-4L-pBS"/>
+                            <constraint firstItem="d40-aF-ETV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BMq-0P-vS8"/>
+                            <constraint firstItem="7Mt-bg-XDs" firstAttribute="top" secondItem="KZH-Lf-asF" secondAttribute="bottom" constant="20" id="Bf9-JO-0nS"/>
+                            <constraint firstItem="POx-eX-hSM" firstAttribute="top" secondItem="XBp-Zz-JRv" secondAttribute="bottom" constant="20" id="BwZ-W6-VVZ"/>
+                            <constraint firstItem="Yak-cM-ORX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FGZ-vb-VZE"/>
+                            <constraint firstItem="7Mt-bg-XDs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TSU-zf-bWQ"/>
+                            <constraint firstItem="Yak-cM-ORX" firstAttribute="top" secondItem="hT6-PI-Cfq" secondAttribute="bottom" constant="20" id="VeE-QM-QVb"/>
+                            <constraint firstItem="vy7-qv-fYg" firstAttribute="top" secondItem="7Mt-bg-XDs" secondAttribute="bottom" constant="20" id="XYs-Ni-GHV"/>
+                            <constraint firstItem="KZH-Lf-asF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gaF-rn-m2t"/>
+                            <constraint firstItem="sgq-BS-R10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jGE-5o-WWJ"/>
+                            <constraint firstItem="hT6-PI-Cfq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="knq-Az-3UB"/>
+                            <constraint firstItem="d40-aF-ETV" firstAttribute="top" secondItem="sgq-BS-R10" secondAttribute="bottom" constant="20" id="obH-4z-qRb"/>
+                            <constraint firstItem="vy7-qv-fYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pCi-YF-C0U"/>
+                            <constraint firstItem="KZH-Lf-asF" firstAttribute="top" secondItem="d40-aF-ETV" secondAttribute="bottom" constant="20" id="pab-fP-ojn"/>
+                            <constraint firstItem="sgq-BS-R10" firstAttribute="top" secondItem="POx-eX-hSM" secondAttribute="bottom" constant="20" id="sDW-rb-sOt"/>
+                            <constraint firstItem="XBp-Zz-JRv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="tUr-yi-BM4"/>
+                            <constraint firstItem="XBp-Zz-JRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJt-Qn-W2h"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
