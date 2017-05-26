@@ -29,11 +29,9 @@ class DemoViewController: UIViewController {
         v.backgroundColor = UIColor.clear
         view.addSubview(v)
         
-        let cover = GKCover(fromView: v, contentView: imageView, style: .Translucent, showStyle: .Top, showAnimStyle: .Top, hideAnimStyle: .Top, notClick: false, showBlock: { 
-            
-        }) { 
+        let cover = GKCover(fromView: v, contentView: imageView, style: .Translucent, showStyle: .Top, showAnimStyle: .Top, hideAnimStyle: .Top, notClick: false, showBlock: nil, hideBlock: {
             v .removeFromSuperview()
-        }
+        })
         cover.show()
     }
     
@@ -48,11 +46,10 @@ class DemoViewController: UIViewController {
         v.backgroundColor = UIColor.clear
         view.addSubview(v)
         
-        let cover = GKCover(fromView: v, contentView: imageView, style: .Translucent, showStyle: .Top, showAnimStyle: .Top, hideAnimStyle: .None, notClick: false, showBlock: { 
-            
-        }) { 
+        let cover = GKCover(fromView: v, contentView: imageView, style: .Translucent, showStyle: .Top, showAnimStyle: .Top, hideAnimStyle: .None, notClick: false, showBlock: nil, hideBlock: {
             v.removeFromSuperview()
-        }
+        })
+        
         cover.show()
     }
     
@@ -63,11 +60,7 @@ class DemoViewController: UIViewController {
         imgView.isUserInteractionEnabled = true
         imgView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imgClick)))
         
-        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Top, hideAnimStyle: .Bottom, notClick: true, showBlock: { 
-            
-        }, hideBlock: { 
-            
-        })
+        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Top, hideAnimStyle: .Bottom, notClick: true, showBlock: nil, hideBlock: nil)
         
         centerCover.show()
         
@@ -85,11 +78,7 @@ class DemoViewController: UIViewController {
         imgView.isUserInteractionEnabled = true
         imgView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imgClick)))
         
-        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Bottom, hideAnimStyle: .Top, notClick: true, showBlock: {
-            
-        }, hideBlock: {
-            
-        })
+        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Bottom, hideAnimStyle: .Top, notClick: true, showBlock: nil, hideBlock: nil)
         
         centerCover.show()
         
@@ -107,11 +96,7 @@ class DemoViewController: UIViewController {
         imgView.isUserInteractionEnabled = true
         imgView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imgClick)))
         
-        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Center, hideAnimStyle: .Center, notClick: true, showBlock: {
-            
-        }, hideBlock: {
-            
-        })
+        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Center, hideAnimStyle: .Center, notClick: true, showBlock: nil, hideBlock: nil)
         
         centerCover.show()
         
@@ -129,11 +114,7 @@ class DemoViewController: UIViewController {
         imgView.isUserInteractionEnabled = true
         imgView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imgClick)))
         
-        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Bottom, hideAnimStyle: .None, notClick: true, showBlock: {
-            
-        }, hideBlock: {
-            
-        })
+        centerCover = GKCover(fromView: UIApplication.shared.keyWindow!, contentView: imgView, style: .Translucent, showStyle: .Center, showAnimStyle: .Bottom, hideAnimStyle: .None, notClick: true, showBlock: nil, hideBlock: nil)
         
         centerCover.show()
         

@@ -20,8 +20,8 @@ public class GKCover: UIView, CAAnimationDelegate {
     var showStyle     : GKCoverShowStyle!
     var showAnimStyle : GKCoverShowAnimStyle!
     var hideAnimStyle : GKCoverHideAnimStyle!
-    var showBlock     : (() -> Void)? = nil
-    var hideBlock     : (() -> Void)? = nil
+    var showBlock     : (() -> Swift.Void)? = nil
+    var hideBlock     : (() -> Swift.Void)? = nil
     
     
     // MARK: - Public Method
@@ -265,7 +265,7 @@ public class GKCover: UIView, CAAnimationDelegate {
 
 extension GKCover {
     
-   public convenience init(fromView: UIView, contentView: UIView, style: GKCoverStyle, showStyle: GKCoverShowStyle, showAnimStyle: GKCoverShowAnimStyle, hideAnimStyle: GKCoverHideAnimStyle, notClick: Bool, showBlock: @escaping (() -> ()), hideBlock: @escaping (() -> ())) {
+   public convenience init(fromView: UIView, contentView: UIView, style: GKCoverStyle, showStyle: GKCoverShowStyle, showAnimStyle: GKCoverShowAnimStyle, hideAnimStyle: GKCoverHideAnimStyle, notClick: Bool, showBlock: (() -> Swift.Void)? = nil, hideBlock: (() -> Swift.Void)? = nil) {
         
         self.init(frame: fromView.bounds)
         

@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'GKCoverSwiftDemo' do
 
-  pod "GKCoverSwift", "~> 1.0.3"
+  pod "GKCoverSwift", "~> 1.0.4"
 
 end
