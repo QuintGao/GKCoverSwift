@@ -1,12 +1,12 @@
 PODS:
-  - GKCoverSwift (1.0.2)
+  - GKCoverSwift (1.0.3)
 
 DEPENDENCIES:
-  - GKCoverSwift (~> 1.0.2)
+  - GKCoverSwift (~> 1.0.3)
 
 SPEC CHECKSUMS:
-  GKCoverSwift: a57a982837cfadbd3d18306e0f425b9153138682
+  GKCoverSwift: 054ed77a2da8eca2f3575d41d367ae09cd1b2c60
 
-PODFILE CHECKSUM: 96125108f4b4f764777007dacdad8a503316d9bb
+PODFILE CHECKSUM: cf836aa7c6f71bb9d3dcf3bef9365616116fd743
 
 COCOAPODS: 1.2.1
