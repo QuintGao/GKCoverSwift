@@ -25,7 +25,7 @@ class DemoViewController: UIViewController {
         imageView.gk_size = CGSize(width: kScreenW, height: kScreenW * (topImage?.size.height)! / (topImage?.size.width)!)
         
         let v = UIView()
-        v.frame = CGRect(x: 0, y: 64, width: kScreenW, height: kScreenH - 64)
+        v.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH)
         v.backgroundColor = UIColor.clear
         view.addSubview(v)
         
@@ -44,11 +44,11 @@ class DemoViewController: UIViewController {
         imageView.isUserInteractionEnabled = true
         
         let v = UIView()
-        v.frame = CGRect(x: 0, y: 64, width: kScreenW, height: kScreenH - 64)
+        v.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH)
         v.backgroundColor = UIColor.clear
         view.addSubview(v)
         
-        let cover = GKCover(fromView: view, contentView: imageView, style: .Translucent, showStyle: .Top, showAnimStyle: .Top, hideAnimStyle: .None, notClick: false, showBlock: { 
+        let cover = GKCover(fromView: v, contentView: imageView, style: .Translucent, showStyle: .Top, showAnimStyle: .Top, hideAnimStyle: .None, notClick: false, showBlock: { 
             
         }) { 
             v.removeFromSuperview()
