@@ -161,7 +161,7 @@ public class GKCover: UIView, CAAnimationDelegate {
                 UIView.animate(withDuration: kAnimDuration, animations: { 
                     self.contentView.center = self.fromView.center
                 }, completion: { (finished) in
-                    if showBlock != nil {
+                    if self.showBlock != nil {
                         self.showBlock!();
                     }
                 })
@@ -179,7 +179,7 @@ public class GKCover: UIView, CAAnimationDelegate {
                 })
             }else {
                 contentView.center = fromView.center
-                if showBlock != nil {
+                if self.showBlock != nil {
                     showBlock!()
                 }
             }
