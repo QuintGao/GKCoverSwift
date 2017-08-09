@@ -77,7 +77,9 @@ public class GKCover: UIView, CAAnimationDelegate {
     
     // delegate
     public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        showBlock!()
+        if showBlock != nil {
+            self.showBlock!();
+        }
     }
     
     /// 半透明遮罩
