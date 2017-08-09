@@ -10,6 +10,7 @@ import UIKit
 
 public class GKCover: UIView, CAAnimationDelegate {
 
+    var cover         : GKCover?
     var coverShow     : Bool = false
     var animated      : Bool = false
     var notclick      : Bool = false
@@ -142,11 +143,13 @@ public class GKCover: UIView, CAAnimationDelegate {
                 UIView.animate(withDuration: kAnimDuration, animations: { 
                     self.contentView.gk_y = 0
                 }, completion: { (finished) in
-                    self.showBlock!()
+                    if self.showBlock != nil {
+                        self.showBlock!();
+                    }
                 })
             }else {
                 if showBlock != nil {
-                    
+                    self.showBlock!();
                 }
                 
                 contentView.gk_y = 0
@@ -158,7 +161,9 @@ public class GKCover: UIView, CAAnimationDelegate {
                 UIView.animate(withDuration: kAnimDuration, animations: { 
                     self.contentView.center = self.fromView.center
                 }, completion: { (finished) in
-                    self.showBlock!()
+                    if self.showBlock != nil {
+                        self.showBlock!();
+                    }
                 })
             }else if showAnimStyle == .Center {
                 contentView!.center = fromView.center
@@ -174,7 +179,7 @@ public class GKCover: UIView, CAAnimationDelegate {
                 })
             }else {
                 contentView.center = fromView.center
-                if showBlock != nil {
+                if self.showBlock != nil {
                     showBlock!()
                 }
             }
@@ -280,3 +285,5 @@ extension GKCover {
         self.hideBlock      = hideBlock
     }
 }
+
+
