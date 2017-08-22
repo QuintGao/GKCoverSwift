@@ -14,6 +14,7 @@ public class GKCover: UIView, CAAnimationDelegate {
     var coverShow     : Bool = false
     var animated      : Bool = false
     var notclick      : Bool = false
+    var hideStatusBar : Bool = false
     
     var fromView      : UIView!
     var contentView   : UIView!
@@ -28,6 +29,14 @@ public class GKCover: UIView, CAAnimationDelegate {
     // MARK: - Public Method
     // 显示遮罩
     public func show() {
+        
+        if hideStatusBar {
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            window.windowLevel = UIWindowLevelAlert
+            window.isHidden    = false
+            window.makeKeyAndVisible()
+        }
+        self.fromView = window
         
         fromView.addSubview(self)
         
@@ -266,6 +275,13 @@ public class GKCover: UIView, CAAnimationDelegate {
             hideBlock!()
         }
         
+        if hideStatusBar {
+            let coverWindow = fromView as! UIWindow
+            coverWindow.isHidden = true
+            coverWindow.resignKey()
+            coverWindow = nil
+        }
+        
         contentView = nil
     }
 }
@@ -285,6 +301,20 @@ extension GKCover {
         self.notclick       = notClick
         self.showBlock      = showBlock
         self.hideBlock      = hideBlock
+    }
+    
+    public convenience init(contentView: UIView, style: GKCoverStyle, showStyle: GKCoverShowStyle, showAnimStyle: GKCoverShowAnimStyle, hideAnimStyle: GKCoverHideAnimStyle, notClick: Bool, showBlock: (() -> Swift.Void)? = nil, hideBlock: (() -> Swift.Void)? = nil) {
+        self.init(frame: fromView.bounds)
+        
+        self.style          = style
+        self.showStyle      = showStyle
+        self.showAnimStyle  = showAnimStyle
+        self.hideAnimStyle  = hideAnimStyle
+        self.contentView    = contentView
+        self.notclick       = notClick
+        self.showBlock      = showBlock
+        self.hideBlock      = hideBlock
+        self.hideStatusBar  = true
     }
 }
 
