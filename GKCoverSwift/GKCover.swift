@@ -276,7 +276,7 @@ public class GKCover: UIView, CAAnimationDelegate {
         }
         
         if hideStatusBar {
-            let coverWindow = fromView as! UIWindow
+            var coverWindow = fromView as! UIWindow
             coverWindow.isHidden = true
             coverWindow.resignKey()
             coverWindow = nil
