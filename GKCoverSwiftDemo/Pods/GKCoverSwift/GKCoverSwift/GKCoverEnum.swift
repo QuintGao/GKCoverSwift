@@ -13,10 +13,10 @@ public let kScreenW = UIScreen.main.bounds.size.width
 public let kScreenH = UIScreen.main.bounds.size.height
 
 /// 默认动画时间
-let kAnimDuration = 0.25
+public let kAnimDuration = 0.25
 
 /// 默认透明度
-let kAlpha = 0.5
+public var kAlpha = 0.5
 
 // MARK - 枚举
 public enum GKCoverStyle : Int {

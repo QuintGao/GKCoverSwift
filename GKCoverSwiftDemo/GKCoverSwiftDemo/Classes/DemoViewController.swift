@@ -143,6 +143,17 @@ class DemoViewController: UIViewController {
         cover.show()
     }
     
+    @IBAction func coverStatusBar(_ sender: Any) {
+        let bottomImage = UIImage(named: "share1");
+        let imgView = UIImageView(image: bottomImage)
+        imgView.gk_size = CGSize(width: kScreenW, height: kScreenW * (bottomImage?.size.height)! / (bottomImage?.size.width)!)
+        
+        let cover = GKCover(contentView: imgView, style: .Translucent, showStyle: .Bottom, showAnimStyle: .Bottom, hideAnimStyle: .Bottom, notClick: false)
+        
+//        kAlpha = 1.0
+        
+        cover.show()
+    }
     
     func imgClick() {
         centerCover.hide()

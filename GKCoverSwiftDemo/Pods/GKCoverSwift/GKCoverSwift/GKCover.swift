@@ -10,19 +10,20 @@ import UIKit
 
 public class GKCover: UIView, CAAnimationDelegate {
 
-    var cover         : GKCover?
-    var coverShow     : Bool = false
-    var animated      : Bool = false
-    var notclick      : Bool = false
+    fileprivate var cover         : GKCover?
+    fileprivate var coverShow     : Bool = false
+    fileprivate var animated      : Bool = false
+    fileprivate var notclick      : Bool = false
+    fileprivate var hideStatusBar : Bool = false
     
-    var fromView      : UIView!
-    var contentView   : UIView!
-    var style         : GKCoverStyle!
-    var showStyle     : GKCoverShowStyle!
-    var showAnimStyle : GKCoverShowAnimStyle!
-    var hideAnimStyle : GKCoverHideAnimStyle!
-    var showBlock     : (() -> Swift.Void)? = nil
-    var hideBlock     : (() -> Swift.Void)? = nil
+    fileprivate var fromView      : UIView!
+    fileprivate var contentView   : UIView!
+    fileprivate var style         : GKCoverStyle!
+    fileprivate var showStyle     : GKCoverShowStyle!
+    fileprivate var showAnimStyle : GKCoverShowAnimStyle!
+    fileprivate var hideAnimStyle : GKCoverHideAnimStyle!
+    fileprivate var showBlock     : (() -> Swift.Void)? = nil
+    fileprivate var hideBlock     : (() -> Swift.Void)? = nil
     
     
     // MARK: - Public Method
@@ -266,6 +267,12 @@ public class GKCover: UIView, CAAnimationDelegate {
             hideBlock!()
         }
         
+        if hideStatusBar {
+            let coverWindow = fromView as! UIWindow
+            coverWindow.isHidden = true
+            coverWindow.resignKey()
+        }
+        
         contentView = nil
     }
 }
@@ -285,6 +292,27 @@ extension GKCover {
         self.notclick       = notClick
         self.showBlock      = showBlock
         self.hideBlock      = hideBlock
+    }
+    
+    public convenience init(contentView: UIView, style: GKCoverStyle, showStyle: GKCoverShowStyle, showAnimStyle: GKCoverShowAnimStyle, hideAnimStyle: GKCoverHideAnimStyle, notClick: Bool, showBlock: (() -> Swift.Void)? = nil, hideBlock: (() -> Swift.Void)? = nil) {
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.windowLevel = UIWindowLevelAlert
+        window.isHidden = false
+        window.makeKeyAndVisible()
+        
+        self.init(frame: window.bounds)
+        
+        self.fromView       = window
+        self.style          = style
+        self.showStyle      = showStyle
+        self.showAnimStyle  = showAnimStyle
+        self.hideAnimStyle  = hideAnimStyle
+        self.contentView    = contentView
+        self.notclick       = notClick
+        self.showBlock      = showBlock
+        self.hideBlock      = hideBlock
+        self.hideStatusBar  = true
     }
 }
 
